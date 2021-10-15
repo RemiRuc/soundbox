@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    overflow: hidden;
+    background-image: radial-gradient(ellipse farthest-corner at center, rgb(255,0,0) 0%, rgb(0,0,0) 100%);
+    min-height: 100vh;
+}
+
+audio{
+    position: absolute;
+    z-index: 2000;
+}
+
+#load{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 300;
+
+    background: black;
+    color: white;
+    border: none;
+    font-size: 2em;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#credit{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: arial;
+    opacity: 0.5;
+
+    z-index: 300;
+
+    transition: .3s;
+
+    &:hover{
+        opacity: 0.9;
+    }
+}
+
+#rs{
+    position: absolute;
+    z-index: 300;
+    bottom: 10px;
+    right: 10px;
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        opacity: 0.3;
+        font-size: 2em;
+        text-decoration: none;
+        font-weight: bolder;
+        padding: 10px;
+
+        transition: .3s;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
+#can{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
